@@ -1,5 +1,6 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -79,10 +80,15 @@
     @apply bg-background text-foreground font-poppins;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-playfair;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-geologica;
   }
-  
+
   html {
     scroll-behavior: smooth;
   }
@@ -92,23 +98,23 @@
   .container-custom {
     @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
   }
-  
+
   .section-title {
-    @apply text-3xl md:text-5xl font-bold text-ocean-deepblue mb-6 font-playfair;
+    @apply text-3xl md:text-5xl font-bold text-ocean-deepblue mb-6 font-geologica;
   }
-  
+
   .btn-primary {
     @apply bg-ocean hover:bg-ocean-dark text-white font-medium py-2 px-6 rounded-full transition-colors duration-300;
   }
-  
+
   .btn-secondary {
     @apply bg-coral hover:bg-opacity-90 text-white font-medium py-2 px-6 rounded-full transition-colors duration-300;
   }
-  
+
   .feature-card {
     @apply bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300;
   }
-  
+
   .glass {
     @apply backdrop-blur-md bg-white/10 border border-white/20;
   }
